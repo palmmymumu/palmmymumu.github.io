@@ -25,10 +25,10 @@
   </style>
   <script>
     window.onload = function () {
-      var src = getParameterByName('src')
-      if (!src) {
-        src = atob(src)
-        document.getElementById('iframe').src = src
+      var src = getParameterByName('src');
+      if (src) {
+        src = atob(src);
+        document.getElementById('iframe').src = src;
       }
     }
     function getParameterByName(name, url) {
